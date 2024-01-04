@@ -1,0 +1,559 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-container {
+    width: 24%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-container {
+    width: 75.8%;
+    height: 98vh;
+    background-color: rgb(255, 255, 255, 0.05);
+    align-self: center;
+    border-radius: 0.5rem;
+    overflow-x: hidden;
+    color: aliceblue;
+}
+
+.upper-container {
+    width: 91%;
+    height: 20vh;
+    background-color: rgb(255, 255, 255, 0.05);
+    margin-top: 2%;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 4%;
+}
+
+.lower-container {
+    width: 95%;
+    height: 77vh;
+    background-color: rgb(255, 255, 255, 0.05);
+    margin-bottom: 2%;
+    border-radius: 0.5rem;
+}
+
+.upper-container > img{
+    width: 6rem;
+    margin-top: 1rem;
+}
+
+.upper-container > ul {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    list-style: none;
+    margin-left: 0.4rem;
+}
+
+.upper-container > ul > li {
+    display: flex;
+    align-items: center;
+}
+
+.home {
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: grey;
+    margin-bottom: 0.7rem;
+}
+
+.search {
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: grey;
+}
+
+.home > img, .search > img {
+    width: 1.2rem;
+}
+
+.home:hover, #plus-icon, .search:hover, .library-text:hover {
+    cursor: pointer;
+    color: aliceblue;
+    transition: 0.5s ease;
+}
+
+.library-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.library-text {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: gray;
+    margin-top: 0.7rem;
+    margin-left: 0.7rem;
+    align-items: center;
+}
+
+.library-text > img {
+    width: 2rem;
+    height: 3rem;
+    margin-right: 0.7rem;
+}
+
+.plus-btn {
+    height: 1.3rem;
+    width: 1.3rem;
+    background-color: inherit;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding: 0.4rem;
+    border-radius: 50%;
+}
+
+.plus-btn:hover {
+    cursor: pointer;
+    background-color: rgb(128, 128, 128, 0.2);
+    transition-duration: 0.3s;
+}
+
+.plus-btn img {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.playlist-container, .podcasts-container {
+    height: 17vh;
+    border-radius: 0.5rem;
+    width: 95%;
+    margin-inline: auto;
+    margin-top: 1rem;
+    background-color: rgb(255, 255, 255, 0.1);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+
+.playlist-container button, .podcasts-container button {
+    background-color: aliceblue;
+    color: black;
+    font-weight: 600;
+    font-size: 0.8rem;
+    border-radius: 1rem;
+    padding-inline: 0.7rem;
+    padding-block: 0.5rem;
+    margin-top: 1rem;
+    margin-left: -0.2rem;
+    border: none;
+}
+
+.playlist-container ul li, .podcasts-container ul li {
+    margin-top: 1rem;
+    list-style: none;
+    font-weight: 550;
+    font-size: 0.8rem;
+}
+
+.playlist-container ul, .podcasts-container ul {
+    padding-left: 1rem;
+}
+
+.playlist-container button:hover, .podcasts-container button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.left-container-links {
+    padding-top: 1.7rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.left-container-links a {
+    color: grey;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.left-container-links-btn button {
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: 800;
+    border: solid 0.08rem grey;
+    color: aliceblue;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    padding-inline: 1rem;
+    padding-block: 0.25rem;
+    background-color: rgb(255, 255, 255, 0.05);
+}
+
+.left-container-links a:hover {
+    color: aliceblue;
+    transition-duration: 0.5s;
+}
+
+.left-container-links-btn button:hover {
+    border-color: aliceblue;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 2rem;
+    padding-block: 0.8rem;
+    background-color: rgb(0, 0, 0, 1);
+    align-items: center;
+    position: fixed;
+    width: 70.5%;
+}
+
+.nav-bar .toggle-btns .svg-1 {
+    cursor: pointer;
+    border-radius: 50%;
+    padding-left: 0.8rem;
+    padding-right: 1rem;
+    padding-block: 0.2rem;
+    background-color: rgb(0, 0, 0, 0.3);
+    border: none;
+}
+
+.nav-bar .toggle-btns .svg-2 {
+    cursor: pointer;
+    border-radius: 50%;
+    padding-left: 1rem;
+    padding-right: 0.8rem;
+    padding-block: 0.2rem;
+    background-color: rgb(0, 0, 0, 0.3);
+    border: none;
+}
+
+.nav-bar .toggle-btns .svg-1:hover, .nav-bar .toggle-btns .svg-2:hover {
+    background-color: rgb(128, 128, 128, 0.15);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.nav-bar .toggle-btns {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0.7rem;
+    justify-content: space-between;
+}
+
+.nav-bar .sign-up-login-btns .sign-up-btn {
+    background-color: inherit;
+    color: grey;
+    border: none;
+    margin-right: 1rem;
+    font-weight: 700;
+}
+
+.nav-bar .sign-up-login-btns .sign-up-btn:hover {
+    cursor: pointer;
+    color: aliceblue;
+    transform: scale(1.05);
+}
+
+.nav-bar .sign-up-login-btns .login-btn {
+    padding-inline: 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    padding-block: 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.nav-bar .sign-up-login-btns .login-btn:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.cards-container-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    margin-top: 5rem;
+    align-items: center;
+}
+
+.cards-container-nav button {
+    background-color: inherit;
+    border: none;
+    color: grey;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.cards-container-nav h1 {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.cards-container-nav h1:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.cards-container-nav button:hover {
+    cursor: pointer;
+    color: aliceblue;
+    transition-duration: 0.5s;
+    text-decoration: underline;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* overflow: scroll; */
+}
+
+.cards-container>div {
+    height: 17rem;
+    width: 11rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    background-color: rgb(128, 128, 128, 0.1);
+    padding-inline: 1rem;
+    padding-top: 1rem;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.cards-container>div h3 {
+    margin-top: 1rem;
+}
+
+.cards-container>div h5 {
+    margin-top: 0.2rem;
+    font-weight: 500;
+}
+
+.cards-container>div img {
+    height: 11rem;
+}
+
+.right-container-links {
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 7rem;
+    padding-left: 1rem;
+    padding-bottom: 3rem;
+}
+
+.right-container-links ul {
+    list-style: none;
+}
+
+.right-container-links ul li a {
+    color: grey;
+    text-decoration: none;
+    font-weight: 550;
+}
+
+.right-container-links ul li {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.right-container-links ul li a:hover {
+    color: aliceblue;
+    transition-duration: 0.5s;
+    text-decoration: underline;
+}
+
+.play-btn {
+    position: absolute;
+    top: 15rem;
+    left: 9rem;
+    background-color: rgb(1, 195, 1);
+    width: 1rem;
+    height: 1rem;
+    padding: 0.8rem;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.play-btn:hover {
+    transform: scale(1.2);
+}
+
+.cards-container>div:hover  {
+    cursor: pointer;
+    background-color: rgb(128, 128, 128, 0.3);
+    transition-duration: 0.6s;
+}
+
+.cards-container>div:hover .play-btn{
+    opacity: 1;
+    top: 8rem;
+    transition: 0.4s;
+}
+
+.copy-right-box {
+    margin-left: 2rem;
+    margin-top: 2.5rem;
+    color: grey;
+    font-weight: 550;
+    margin-bottom: 5rem;
+}
+
+.social-media-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.right-lower-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 4rem;
+    justify-content: space-between;
+    padding-right: 1rem;
+    margin-inline: 2rem;
+    margin-top: 5rem;
+    border-bottom: 2px solid rgb(128, 128, 128, 0.5);
+}
+
+.social-media-links div {
+    height: 1.3rem;
+    width: 1.3rem;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-left: 1rem;
+    background-color: rgb(128, 128, 128, 0.2);
+}
+
+.social-media-links div:hover {
+    background-color: rgb(128, 128, 128, 0.7);
+}
+
+.social-media-links div img {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.play-bar-control-btns {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.play-bar-control-btns img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.song-info-container {
+    width: 5rem;
+    height: 4rem;
+}
+
+.play-bar {
+    background-color: green;
+    border-radius: 0;
+    padding-block: 0.6rem;
+    position: fixed;
+    top: 40.6rem;
+    width: 69.6rem;
+    padding-inline: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 3.5rem;
+}
+
+audio {
+    display: none;
+}
+
+@media (max-width: 950px) {
+
+    .right-container {
+        width: 99.2%;
+        height: 100vh;
+    }
+
+    .nav-bar {
+        width: 92%;
+        padding-inline: 1.3rem;
+    }
+    
+    .cards-container {
+        overflow-x: auto;
+        overflow-y: hidden;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin-inline: 1rem;
+        justify-content: flex-start;
+    }
+
+    .social-media-links {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .left-container {
+        margin-top: 5rem;
+        position: absolute;
+        left: -230rem;
+        width: 90%;
+        height: 91vh;
+        background-color: black;
+    }
+
+    #left-container-display {
+        left: 0rem;
+    }
+
+    #left-container-display-none {
+        left: -23rem;
+    }
+
+    /* .upper-container {
+        width: 91%;
+        height: 20vh;
+    }
+
+    .lower-container {
+        width: 95%;
+        height: 89vh;
+    } */
+
+}
+
+@media (min-width: 951px) {
+
+    .nav-bar .toggle-btns .ham-burger-btn {
+        margin-right: 1rem;
+        display: none;
+    }
+
+}

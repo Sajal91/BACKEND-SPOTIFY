@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left-container">
+            <div class="upper-container">
+                <img src="logo.svg" alt="spotify-logo">
+                <ul>
+                    <li class="home"><img src="home.svg">&nbsp;&nbsp;<span>Home</span></li>
+                    <li class="search"><img src="search.svg">&nbsp;&nbsp;<span>Search</span></li>
+                </ul>
+            </div>
+            <div class="lower-container">
+                
+                <div class="library-header">
+                    <div class="library-text">
+                        <img src="library.svg" alt="library-icon">
+                        <span id="lib-text">Your Library</span>
+                    </div>
+                    <div class="plus-btn">
+                        <img src="plus.svg" alt="plus-icon">
+                    </div>
+                </div>
+
+                <div class="playlist-container">
+                    <ul>
+                        <h4>Create your first playlist</h4>
+                        <li>It's easy, we'll help you</li>
+                        <button>Create Playlist</button>
+                    </ul>
+                </div>
+                
+                <div class="podcasts-container">
+                    <ul>
+                        <h4>Let's find some podcasts to follow</h4>
+                        <li>We will keep you updated on new episodes</li>
+                        <button>Browse Podcasts</button>
+                    </ul>
+                </div>
+
+                <div class="left-container-links">
+                    <a href="">Legal</a>
+                    <a href="">Privacy Center</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Cookies</a>
+                    <a href="">About Ads</a>
+                    <a href="">Accessibility</a>
+                </div>
+
+                <div class="left-container-links-btn">
+                    <button>English</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="right-container">
+            <nav class="nav-bar">
+                <div class="toggle-btns">
+                    <div class="ham-burger-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="70" width="40" viewBox="0 0 448 512"><path fill="#ffffff" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                    </div>
+                    <button class="svg-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="35" width="20" viewBox="0 0 384 512"><path fill="#ffffff" d="M380.6 81.7c7.9 15.8 1.5 35-14.3 42.9L103.6 256 366.3 387.4c15.8 7.9 22.2 27.1 14.3 42.9s-27.1 22.2-42.9 14.3l-320-160C6.8 279.2 0 268.1 0 256s6.8-23.2 17.7-28.6l320-160c15.8-7.9 35-1.5 42.9 14.3z"/></svg>
+                    </button>
+                    <button class="svg-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="35" width="20" viewBox="0 0 384 512"><path fill="#ffffff" d="M3.4 81.7c-7.9 15.8-1.5 35 14.3 42.9L280.5 256 17.7 387.4C1.9 395.3-4.5 414.5 3.4 430.3s27.1 22.2 42.9 14.3l320-160c10.8-5.4 17.7-16.5 17.7-28.6s-6.8-23.2-17.7-28.6l-320-160c-15.8-7.9-35-1.5-42.9 14.3z"/></svg>
+                    </button>
+                </div>
+                <div class="sign-up-login-btns">
+                    <button class="sign-up-btn">Sign up</button>
+                    <button class="login-btn">Log in</button>
+                </div>
+            </nav>
+
+            <div class="cards-container-nav">
+                <h1>Spotify Playlist</h1>
+                <button id="show-more-cards-btn">Show more</button>
+            </div>
+
+            <div class="cards-container">
+                <div class="cards">
+                    <audio style="background-color: aliceblue;" controls src="Songs/Koka vs Coca - Karan Aujla 128 Kbps.mp3"></audio>
+                    <div class="play-btn">
+                        <svg fill="#000" height="16" width="16" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 iYxpxA"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                    </div>
+                    <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e02478f8fc9173cae611b8550f8" data-testid="card-image" alt="Koka vs. Coca" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt yOKoknIYYzAE90pe7_SE Yn2Ei5QZn19gria6LjZj">
+                    <h3>Koka vs. Coca</h3>
+                    <h5>Your daily update of the most played tracks</h5>
+                </div>
+                <div class="cards">
+                    <audio style="background-color: aliceblue;" controls src="Songs/P O V Point of View.mp3"></audio>
+                    <div class="play-btn">
+                        <svg fill="#000" height="16" width="16" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 iYxpxA"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                    </div>
+                    <img aria-hidden="false" src="https://i.scdn.co/image/ab67616d00001e02c6677eca57841df16b6014d6" alt="P.O.V (Point of View)">
+                    <h3>P.O.V (Point of View)</h3>
+                    <h5>Your daily update of the most played tracks</h5>
+                </div>
+                <div class="cards">
+                    <audio style="background-color: aliceblue;" controls src="Songs/Soch.mp3"></audio>
+                    <div class="play-btn">
+                        <svg fill="#000" height="16" width="16" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 iYxpxA"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                    </div>
+                    <img aria-hidden="false" src="https://i.scdn.co/image/ab67616d00001e0282e45c05b3bb35659b89a0e4" alt="Soch">
+                    <h3>Soch</h3>
+                    <h5>Your daily update of the most played tracks</h5>
+                </div>
+                <div class="cards">
+                    <audio style="background-color: aliceblue;" controls src="Songs/Koka vs Coca - Karan Aujla 128 Kbps.mp3"></audio>
+                    <div class="play-btn">
+                        <svg fill="#000" height="16" width="16" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 iYxpxA"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                    </div>
+                    <img aria-hidden="false" src="https://i.scdn.co/image/ab67706f0000000223728194acce68a135b2941b">
+                    <h3>Top 50-Global</h3>
+                    <h5>Your daily update of the most played tracks</h5>
+                </div>
+                <div class="cards">
+                    <audio style="background-color: aliceblue;" controls src="Songs/Koka vs Coca - Karan Aujla 128 Kbps.mp3"></audio>
+                    <div class="play-btn">
+                        <svg fill="#000" height="16" width="16" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 iYxpxA"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                    </div>
+                    <img aria-hidden="false" src="https://i.scdn.co/image/ab67706f000000024c4ae64d4ed1fa93a1b886ca">
+                    <h3>Top 50-Global</h3>
+                    <h5>Your daily update of the most played tracks</h5>
+                </div>
+            </div>
+
+            <div class="right-lower-container">
+                <div class="right-container-links">
+                    <div class="company-links">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Jobs</a></li>
+                            <li><a href="">For the Record</a></li>
+                        </ul>
+                    </div>
+                    <div class="communities-links">
+                        <h4>Communities</h4>
+                        <ul>
+                            <li><a href="">For Artists</a></li>
+                            <li><a href="">Developers</a></li>
+                            <li><a href="">Advertising</a></li>
+                            <li><a href="">Investors</a></li>
+                            <li><a href="">Vendors</a></li>
+                        </ul>
+                    </div>
+                    <div class="support-links">
+                        <h4>Useful links</h4>
+                        <ul>
+                            <li><a href="">Support</a></li>
+                            <li><a href="">Free Mobile App</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="social-media-links">
+                    <div class="insta-link">
+                        <img src="insta.svg" alt="">
+                    </div>
+                    <div class="twitter-link">
+                        <img src="twitter.svg" alt="">
+                    </div>
+                    <div class="facebook-link">
+                        <img src="facebook.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copy-right-box">&copy;&nbsp;2024 Spotify AB</div>
+
+            <nav class="play-bar">
+                <div class="song-info-container">
+                    <img src="" alt="">
+                </div>
+                <div class="play-bar-control-btns">
+                    <div class="previous-btn">
+                        <img src="previous-btn.svg" alt="">
+                    </div>
+                    <div class="play-bar-play-btn">
+                        <img src="play-btn.svg" alt="">
+                    </div>
+                    <div class="next-btn">
+                        <img src="next-btn.svg" alt="">
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
